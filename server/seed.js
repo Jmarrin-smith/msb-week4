@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
+const db = new pg.Pool({ connectionString: process.env.MESSAGEDB });
 
 db.query(`
 create table if not exists messages(
