@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: rgb(242, 242, 242);
+  background-color: aqua;
+}
+
+header {
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 35vh;
+}
+
+input {
+  border-radius: 8%;
+}
+
+.formi {
+  height: fit-content;
+}
+
+.message {
+  height: 20vh;
+  width: 30vw;
+}
+
+button {
+  width: 50px;
+}
+
+.content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.msgtxt {
+  height: fit-content;
+  width: 60vw;
+  border-color: rgb(156, 156, 156);
+  border-width: 8px;
+  border-radius: 10%;
+}
+
+.user {
+  left: 10px;
+  top: 10px;
+}

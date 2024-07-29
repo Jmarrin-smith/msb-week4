@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="./style1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>message board</h1>
+      <div>
+        <form id="msg">
+          <div class="formi">
+            <label for="name">name</label>
+            <input placeholder="name" id="name" name="name" />
+          </div>
+          <div class="formi">
+            <label for="message">message</label>
+            <input
+              placeholder="type message here"
+              id="message"
+              name="message"
+              class="message"
+            />
+          </div>
+          <div class="formi">
+            <button>send</button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <div class="content">
+      <div class="messages">
+        <h3 class="user">jamie</h3>
+        <p class="msgtxt">welcome</p>
+        <button id="like" class="like">like</button>
+      </div>
+    </div>
+  </body>
+</html>
