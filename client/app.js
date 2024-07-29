@@ -6,7 +6,7 @@ msg.addEventListener("submit", async function (event) {
   const formData = new FormData(form);
   const formValues = Object.fromEntries(formData);
 
-  const response = await fetch("http://localhost:8080/messages", {
+  const response = await fetch("https://msb-week4-3.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -20,7 +20,7 @@ msg.addEventListener("submit", async function (event) {
 fetchmessages();
 async function fetchmessages() {
   // talk to the server and ask for the array of messages
-  const result = await fetch(`http://localhost:8080/messages`);
+  const result = await fetch(`https://msb-week4-3.onrender.com`);
   // how to read the incoming data
   const messages = await result.json();
   generatemessages(messages);
